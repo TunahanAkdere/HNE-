@@ -7023,9 +7023,13 @@ button.bg-dark:focus {
 
 .d-flex {
   display: flex !important;
+  align-content: center;
+  flex-direction: row;
   flex-wrap: nowrap;
-  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
+
 
 .d-flexFooter {
   display: flex !important;

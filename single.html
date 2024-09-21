@@ -39,15 +39,15 @@
         class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
       >
         <a
-        href="index.html"
+          href="index.html"
           class="navbar-brand font-weight-bold text-secondary"
           style="font-size: 50px"
         >
-        <img
-        src="resimler/LOGO.png"
-        alt="HNE İnşaat Logo"
-        style="height: 95px"
-      />
+          <img
+            src="resimler/LOGO.png"
+            alt="HNE İnşaat Logo"
+            style="height: 95px"
+          />
         </a>
         <button
           type="button"
@@ -62,7 +62,7 @@
           id="navbarCollapse"
         >
           <div class="navbar-nav font-weight-bold mx-auto py-0">
-            <a href="index.html" class="nav-item nav-link active">Anasayfa</a>
+            <a href="index.html" class="nav-item nav-link">Anasayfa</a>
             <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
             <a href="class.html" class="nav-item nav-link">Makina Parkı</a>
             <a href="gallery.html" class="nav-item nav-link">Galeri</a>
@@ -71,7 +71,7 @@
             <div class="nav-item dropdown">
               <a
                 href="#"
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle active"
                 data-toggle="dropdown"
                 >Pages</a
               >
@@ -344,7 +344,6 @@
           </div>
 
           <!-- Comment Form -->
-       
         </div>
 
         <div class="col-lg-4 mt-5 mt-lg-0">
@@ -539,12 +538,12 @@
     <div id="footer"></div>
 
     <script>
-      fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('footer').innerHTML = data;
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
         })
-        .catch(error => console.error('Footer yüklenirken hata:', error));
+        .catch((error) => console.error("Footer yüklenirken hata:", error));
     </script>
     <!-- Footer End -->
 

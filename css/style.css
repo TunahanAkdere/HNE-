@@ -10073,3 +10073,149 @@ a.text-dark:focus {
   padding: 0;
   list-style-type: none;
 }
+
+/* Akordiyon Menu For Machine Park*/
+/*Section used for centering process*/
+.container {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.container h2 {
+  position: relative;
+  width: 23rem;
+  color: #343a40; /* Siyah yerine koyu gri ton */
+  margin: 20px 0;
+}
+
+.container h2::after {
+  position: absolute;
+  content: "";
+  width: 67px;
+  height: 2px;
+  background-color: #ff6f61; /* Göz alıcı bir turuncu ton */
+  right: 5px;
+  bottom: 0;
+}
+
+/* Accordion (Akordiyon) stilleri */
+.accordion {
+  width: 100%;
+  padding: 0 5px;
+  border: 2px solid #ff6f61; /* Turuncu sınır */
+  cursor: pointer;
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #f8f9fa; /* Hafif gri arka plan */
+}
+
+.accordion i {
+  color: #ff6f61; /* Turuncu ikon rengi */
+  transition: all 0.5s ease-in;
+}
+
+.accordion .fa-minus {
+  display: none;
+}
+
+.accordion:active,
+.accordion:focus,
+.accordion:hover {
+  background-color: #ff6f61; /* Turuncu arka plan aktifken */
+  color: white; /* Beyaz metin */
+  transition: all 0.5s ease-in;
+  border: 2px solid #dddddd;
+}
+
+.accordion:hover {
+  background-color: #ff6f61; /* Turuncu arka plan */
+  color: white;
+  transition: all 0.5s ease-in;
+  border: 2px solid #ff6f61; /* Turuncu sınır */
+}
+
+.active .fa-minus {
+  display: block;
+}
+
+.active .fa-plus {
+  display: none;
+}
+
+.accordion h5 {
+  font-size: 20px;
+  margin: 0;
+  color: #ff6f61; /* Turuncu başlık */
+  padding-left: 5px;
+}
+
+.active i,
+.active h5,
+.accordion:hover i,
+.accordion:hover h5 {
+  color: white; /* Aktifken beyaz ikon ve başlık */
+}
+
+.panal {
+  padding: 0 15px;
+  border-left: 3px solid #ff6f61; /* Turuncu kenar */
+  margin-left: 25px;
+  font-size: 14px;
+  text-align: justify;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  max-height: 0;
+}
+
+/*styled-table*/
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.2em;
+  font-family: "Josefino Sans", sans-serif;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.thColor {
+  color: #000;
+}
+
+.styled-table thead tr {
+  background-color: #a0a0a0a1;
+  color: #ffffff;
+  text-align: center;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr h4 {
+  border-bottom: 1px solid #a0a0a0a1;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #a0a0a0;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.styled-table h4 {
+  margin: 0;
+  font-size: 1.4em;
+}

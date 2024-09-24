@@ -9713,7 +9713,7 @@ a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #000000 !important;
+  color: #ffffff !important;
 }
 
 a.text-secondary:hover,
@@ -9905,7 +9905,7 @@ a.text-dark:focus {
   display: inline-block;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #17a2b8;
+  color: #0071ba;
 }
 
 .section-title span {
@@ -9921,7 +9921,7 @@ a.text-dark:focus {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #17a2b8;
+  background: #0071ba;
 }
 
 [class^="flaticon-"]:before,

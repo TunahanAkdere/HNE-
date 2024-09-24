@@ -10092,42 +10092,36 @@ a.text-dark:focus {
 
 /* Accordion (Akordiyon) stilleri */
 .accordion {
-  width: 100%;
-  padding: 0 5px;
-  border: 2px solid #ff6f61; /* Turuncu sınır */
+  width: 50%;
+  padding: 10px 5px 10px 5px;
+  border: 1px solid #0071ba; /* mavi sınır */
   cursor: pointer;
   display: flex;
-  margin: 10px 0;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   border-radius: 30px;
   background-color: #f8f9fa; /* Hafif gri arka plan */
+  margin: 0 auto 15px auto; /* Yatay ortalama */
+  transition: all 0.3s ease-in-out; /* Geçiş efektleri */
 }
 
 .accordion i {
-  color: #ff6f61; /* Turuncu ikon rengi */
-  transition: all 0.5s ease-in;
+  color: #0071ba; /* mavi ikon rengi */
+  transition: all 0.3s ease-in-out;
 }
 
 .accordion .fa-minus {
   display: none;
 }
 
-.accordion:active,
-.accordion:focus,
-.accordion:hover {
-  background-color: #ff6f61; /* Turuncu arka plan aktifken */
+.accordion:hover,
+.accordion:focus {
+  background-color: #0071ba; /* mavi arka plan hover'da */
   color: white; /* Beyaz metin */
-  transition: all 0.5s ease-in;
-  border: 2px solid #dddddd;
 }
 
-.accordion:hover {
-  background-color: #ff6f61; /* Turuncu arka plan */
-  color: white;
-  transition: all 0.5s ease-in;
-  border: 2px solid #ff6f61; /* Turuncu sınır */
+.accordion:active {
+  color: white; /* Beyaz metin aktifken */
 }
 
 .active .fa-minus {
@@ -10141,21 +10135,29 @@ a.text-dark:focus {
 .accordion h5 {
   font-size: 20px;
   margin: 0;
-  color: #ff6f61; /* Turuncu başlık */
+  color: #0071ba; /* MAVİ başlık */
   padding-left: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .active i,
-.active h5,
-.accordion:hover i,
-.accordion:hover h5 {
-  color: white; /* Aktifken beyaz ikon ve başlık */
+.active h5 {
+  color: #0071ba; /* Aktifken beyaz ikon ve başlık */
 }
 
+.accordion:hover i,
+.accordion:hover h5 {
+  color: #ffffff; /* Hover'da beyaz ikon ve başlık */
+}
+
+.active:hover,
+.active:focus {
+}
+
+
 .panal {
-  padding: 0 15px;
-  border-left: 3px solid #ff6f61; /* Turuncu kenar */
-  margin-left: 25px;
+  border-left: 3px solid #0071ba; /* mavi kenar */
+  margin-left: 15px;
   font-size: 14px;
   text-align: justify;
   overflow: hidden;
@@ -10166,21 +10168,22 @@ a.text-dark:focus {
 /*styled-table*/
 .styled-table {
   width: 100%;
+  max-width: 800px; /* Tablonun maksimum genişliği */
   border-collapse: collapse;
-  margin: 25px 0;
+  margin: 25px auto; /* Yatay ortalama */
   font-size: 1.2em;
   font-family: "Josefino Sans", sans-serif;
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Başlık renkleri */
 .thColor {
-  color: #000;
+  color: #ffffff; /* Başlık yazı rengi beyaz */
 }
 
 .styled-table thead tr {
-  background-color: #a0a0a0a1;
-  color: #ffffff;
+  background-color: #ffffff; /* Başlık için mavi ton */
   text-align: center;
 }
 
@@ -10189,24 +10192,31 @@ a.text-dark:focus {
   padding: 12px 15px;
 }
 
+/* Alt başlıklar */
 .styled-table tbody tr h4 {
-  border-bottom: 1px solid #a0a0a0a1;
+  border-bottom: 1px solid #d1d1d1;
+  color: #333333; /* Daha koyu gri */
 }
 
 .styled-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
+  background-color: #f3f3f3; /* Çift sıralar için hafif gri */
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+  background-color: #ffffff; /* Tek sıralar için beyaz */
 }
 
 .styled-table tbody tr:last-of-type {
-  border-bottom: 2px solid #a0a0a0;
+  border-bottom: 2px solid #0071ba; /* Alt çizgi için mavi ton */
 }
 
 .styled-table tbody tr:hover {
-  background-color: #f1f1f1;
+  background-color: #e1e7ec; /* Hover'da açık mavi-gri arka plan */
   cursor: pointer;
 }
 
 .styled-table h4 {
   margin: 0;
   font-size: 1.4em;
+  color: #0071ba; /* Alt başlıklar için mavi */
 }

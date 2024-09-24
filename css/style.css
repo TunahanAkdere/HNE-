@@ -6498,6 +6498,41 @@ a.close.disabled {
 .bg-primary {
   background-color: #0071ba !important;
 }
+
+  .contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),   url('../img/ates-insaat-12.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
+    background-position: center; /* Resmin ortalanmasını sağlar */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+
+  }
+  .team{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../img/ates-insaat-15.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
+    background-position: center; /* Resmin ortalanmasını sağlar */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+  
+  }
+.galeri{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../img/ates-insaat-galeri.jpg'); /* Arka plan resmi */
+  background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
+  background-position: center; /* Resmin ortalanmasını sağlar */
+  background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+  
+}
+.about{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/atesABOUT.png'); /* Arka plan resmi */
+  background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
+  background-position: center; /* Resmin ortalanmasını sağlar */
+  background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+}
+.class{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/ates-insaat-makina-parki.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
 .bg-primarybackground {
   display: table;
   width: 100%;

@@ -1,6 +1,3 @@
-/*******************************/
-/********* Footer 1 CSS ********/
-/*******************************/
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -13,75 +10,25 @@ a {
 
 a:hover,
 a:active,
-a:focus {
+a:focus { 
     outline: none;
     text-decoration: none;
 }
 
 .footer {
     position: relative;
-    padding-top: 45px;
+    padding-top: 1px;
     background: #121518;
 }
 
-.footer .newsletter {
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto 45px auto;
-    padding: 30px 15px;
-    background: #000000;
-    text-align: center;
-}
 
-.footer .newsletter h2 {
-    color: #dddddd;
-    font-size: 35px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
 
-.footer .newsletter .form {
-    position: relative;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.footer .newsletter input {
-    height: 50px;
-    border: 2px solid #cdcdcd;
-    border-radius: 0;
-}
-
-.footer .newsletter .btn {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    height: 40px;
-    padding: 8px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #0085ff;
-    background: #121518;
-    border-radius: 0;
-    border: 2px solid #0085ff;
-    transition: .3s;
-}
-
-.footer .newsletter .btn:hover {
-    color: #ffffff;
-    background: #0085ff;
-}
-
-.footer .newsletter .btn:focus {
-    box-shadow: none;
-}
 
 .footer .footer-about,
 .footer .footer-link,
 .footer .footer-contact {
     position: relative;
-    margin-bottom: 45px;
+    margin-bottom: 55px;
     color: #dddddd;
 }
 
@@ -89,7 +36,7 @@ a:focus {
 .footer .footer-link h3,
 .footer .footer-contact h3{
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 22px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -123,7 +70,7 @@ a:focus {
 
 .footer .footer-social {
     position: relative;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 .footer .footer-social a {
@@ -131,7 +78,7 @@ a:focus {
 }
 
 .footer .footer-social a i {
-    margin-right: 15px;
+    margin-right: 5px;
     font-size: 18px;
     color: #0085ff;
 }
@@ -170,6 +117,7 @@ a:focus {
     padding-right: 0;
     border-right: none;
 }
+
 
 .footer .copyright {
     padding: 30px 15px;

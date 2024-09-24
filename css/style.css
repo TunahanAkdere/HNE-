@@ -10089,15 +10089,6 @@ a.text-dark:focus {
   margin: 20px 0;
 }
 
-.container h2::after {
-  position: absolute;
-  content: "";
-  width: 67px;
-  height: 2px;
-  background-color: #ff6f61; /* Göz alıcı bir turuncu ton */
-  right: 5px;
-  bottom: 0;
-}
 
 /* Accordion (Akordiyon) stilleri */
 .accordion {

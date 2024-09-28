@@ -42,11 +42,11 @@
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
         <div class="navbar-nav font-weight-bold mx-auto py-0">
-          <a href="index.html" class="nav-item nav-link">Anasayfa</a>
-          <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
-          <a href="class.html" class="nav-item nav-link">Makina Parkı</a>
-          <a href="gallery.html" class="nav-item nav-link">Galeri</a>
-          <a href="team.html" class="nav-item nav-link active">Referanslar</a>
+          <a href="indexEn.html" class="nav-item nav-link ">Anasayfa</a>
+          <a href="aboutEn.html" class="nav-item nav-link ">Hakkımızda</a>
+          <a href="classEn.html" class="nav-item nav-link">Makina Parkı</a>
+          <a href="galleryEn.html" class="nav-item nav-link">Galeri</a>
+          <a href="teamEn.html" class="nav-item nav-link active">Referanslar</a>
 
           <div class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -55,11 +55,11 @@
               <a href="single.html" class="dropdown-item">Blog Detail</a>
             </div>
           </div>
-          <a href="contact.html" class="nav-item nav-link">İletişim</a>
+          <a href="contactEn.html" class="nav-item nav-link">Contact</a>
         </div>
-        <a href="indexEn.html" class="btn btn-primary px-4" style="display: flex; align-items: center; padding: 8px; margin-right: 10px;">
-          <img src="../HNE-/img/tr.jpg" alt="English Icon" style="width: 30px; height:20px; margin-right: 10px;">
-          TR
+        <a href="index.html" class="btn btn-primary px-4" style="display: flex; align-items: center; padding: 8px; margin-right: 10px;">
+          <img src="../HNE-/img/en.jpg" alt="English Icon" style="width: 30px; height:20px; margin-right: 10px;">
+          EN
       </a>
       </div>
     </nav>
@@ -168,7 +168,7 @@
   <div id="footer"></div>
 
   <script>
-    fetch("footer.html")
+    fetch("footerEn.html")
       .then((response) => response.text())
       .then((data) => {
         document.getElementById("footer").innerHTML = data;

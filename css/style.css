@@ -6499,39 +6499,57 @@ a.close.disabled {
   background-color: #0071ba !important;
 }
 
-  .contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),   url('../img/ates-insaat-12.jpg'); /* Arka plan resmi */
-    background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
-    background-position: center; /* Resmin ortalanmasını sağlar */
-    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/ates-insaat-12.jpg"); /* Arka plan resmi */
+  background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
+  background-position: center; /* Resmin ortalanmasını sağlar */
+  background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+}
 
-  }
-  .team{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../img/ates-insaat-15.jpg'); /* Arka plan resmi */
-    background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
-    background-position: center; /* Resmin ortalanmasını sağlar */
-    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
-  
-  }
-.galeri{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../img/ates-insaat-galeri.jpg'); /* Arka plan resmi */
-  background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
-  background-position: center; /* Resmin ortalanmasını sağlar */
-  background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
-  
-}
-.about{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/atesABOUT.png'); /* Arka plan resmi */
+.newsDetail {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/ates-insaat-08.jpg"); /* Arka plan resmi */
   background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
   background-position: center; /* Resmin ortalanmasını sağlar */
   background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
 }
-.class{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/ates-insaat-makina-parki.jpg');
+
+.news {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/ates-insaat-03.jpg"); /* Arka plan resmi */
+  background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
+  background-position: center; /* Resmin ortalanmasını sağlar */
+  background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+}
+
+.team {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/ates-insaat-15.jpg"); /* Arka plan resmi */
+  background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
+  background-position: center; /* Resmin ortalanmasını sağlar */
+  background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+}
+.galeri {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/ates-insaat-galeri.jpg"); /* Arka plan resmi */
+  background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
+  background-position: center; /* Resmin ortalanmasını sağlar */
+  background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+}
+.about {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/atesABOUT.png"); /* Arka plan resmi */
+  background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
+  background-position: center; /* Resmin ortalanmasını sağlar */
+  background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+}
+.class {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/ates-insaat-makina-parki.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
 }
 .bg-primarybackground {
   display: table;
@@ -9635,15 +9653,15 @@ button.bg-dark:focus {
 }
 
 .text-left {
-  text-align: left !important;
+  text-align: center !important;
 }
 
 .text-right {
-  text-align: right !important;
+  text-align: center !important;
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
@@ -10124,7 +10142,6 @@ a.text-dark:focus {
   margin: 20px 0;
 }
 
-
 /* Accordion (Akordiyon) stilleri */
 .accordion {
   width: 50%;
@@ -10188,7 +10205,6 @@ a.text-dark:focus {
 .active:hover,
 .active:focus {
 }
-
 
 .panal {
   border-left: 3px solid #0071ba; /* mavi kenar */

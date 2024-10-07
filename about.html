@@ -34,6 +34,50 @@
   <!-- Customized Bootstrap Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
 
+  <style>
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      /* 16:9 oranı */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .about-title {
+        font-size: 2rem;
+        /* Mobil cihazlarda daha küçük başlık */
+      }
+
+      .about-text {
+        font-size: 1rem;
+        /* Mobil cihazlarda daha küçük metin */
+      }
+    }
+
+    @media (min-width: 769px) {
+      .about-title {
+        font-size: 3rem;
+        /* Daha büyük ekranlar için başlık */
+      }
+
+      .about-text {
+        font-size: 1.2rem;
+        /* Daha büyük ekranlar için metin */
+      }
+    }
+  </style>
+
 
 </head>
 
@@ -50,8 +94,8 @@
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
         <div class="navbar-nav font-weight-bold mx-auto py-0">
-          <a href="index.html" class="nav-item nav-link active">Anasayfa</a>
-          <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
+          <a href="index.html" class="nav-item nav-link ">Anasayfa</a>
+          <a href="about.html" class="nav-item nav-link active">Hakkımızda</a>
           <a href="makineparki.html" class="nav-item nav-link">Makina Parkı</a>
           <a href="gallery.html" class="nav-item nav-link">Galeri</a>
           <a href="reference.html" class="nav-item nav-link">Referanslar</a>
@@ -93,24 +137,25 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5">
-          <iframe class="img-fluid rounded mb-5 mb-lg-0"
-            src="https://www.youtube.com/embed/RrO0RZv49lA?si=TySYT1cIcBKPo14k" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="
-                width: 100%;
-                height: 660px;
-                margin-bottom: 30px;
-                margin-top: 20px;
-              ">
-          </iframe>
+          <div style="margin-bottom: 10px" class="video-container">
+            <iframe class="img-fluid rounded mb-5 mb-lg-0"
+              src="https://www.youtube.com/embed/RrO0RZv49lA?si=TySYT1cIcBKPo14k" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+
+          <img src="img/ates-insaat-14.jpg" alt="atesAbout" style="width: 100%; margin-bottom: 10px;">
+          <img src="img/ates-insaat-02.jpg" alt="atesAbout" style="width: 100%;">
+
         </div>
         <div class="col-lg-7">
           <p class="section-title pr-5">
             <span class="pr-2">HNE İNŞAAT</span>
           </p>
-          <h1 class="mb-4">HAKKIMIZDA</h1>
-          <p style="font-size: 1.1rem ; color: black;">
+          <h1 class="about-title mb-4">HAKKIMIZDA</h1>
+          <p class="about-text" style="color: black;">
             Bazı anlar vardır içimize tatlı bir mutluluk veren, yolumuzu
             aydınlatan... Yağan yağmurun verdiği özgürlükte, evimizde olmanın
             verdiği huzurda, içten bir gülümsemenin samimiyetinde, pişen bir
@@ -147,9 +192,10 @@
             olmayı hedefleyerek, büyük bir özenle taşıyoruz. Huzur, güvenlik
             ve refahın sembolü ülkemiz için hep birlikte en iyisine!
             <br><br>
-          <h1>HNE İnşaat</h1>
           </p>
+          <h1 class="about-title">HNE İnşaat</h1>
         </div>
+
       </div>
     </div>
   </div>

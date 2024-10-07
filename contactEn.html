@@ -32,6 +32,28 @@
 
   <!-- Customized Bootstrap Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
+
+
+
+  <style>
+    .map-container iframe {
+      width: 100%;
+      height: 400px;
+    }
+
+    @media (max-width: 768px) {
+      .map-container iframe {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .map-container iframe {
+        height: 250px;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -41,12 +63,13 @@
       <a href="index.html" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px">
         <img src="img/LOGO.png" alt="HNE İnşaat Logo" style="height: 95px" />
       </a>
+
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
         <div class="navbar-nav font-weight-bold mx-auto py-0">
-          <a href="indexEn.html" class="nav-item nav-link ">Home</a>
+          <a href="indexEn.html" class="nav-item nav-link active">Home</a>
           <a href="aboutEn.html" class="nav-item nav-link ">About us</a>
           <a href="makineparkiEn.html" class="nav-item nav-link">Machinery Park</a>
           <a href="galleryEn.html" class="nav-item nav-link">Gallery</a>
@@ -59,12 +82,12 @@
               <a href="single.html" class="dropdown-item">News From Us</a>
             </div>
           </div>
-          <a href="contactEn.html" class="nav-item nav-link active">Contact</a>
+          <a href="contactEn.html" class="nav-item nav-link">Contact</a>
         </div>
         <a href="index.html" class=" px-4"
-        style="display: flex; align-items: center; padding: 8px; margin-right: 10px;">
-        <img src="img/en.png" alt="En icon" style="width: 60px; margin-right: 10px;">
-      </a>
+          style="display: flex; align-items: center; padding: 8px; margin-right: 10px;">
+          <img src="img/en.png" alt="En icon" style="width: 60px; margin-right: 10px;">
+        </a>
       </div>
     </nav>
   </div>
@@ -73,76 +96,71 @@
   <!-- Header Start -->
   <div class="container-fluid contact mb-5 ">
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-      <h3 class="display-3 font-weight-bold text-white">Contact</h3>
+      <h3 class="display-3 font-weight-bold text-white">CONTACT</h3>
       <div class="d-inline-flex text-white">
-        <p class="m-0"><a class="text-white" href="">HOME</a></p>
+        <p class="m-0"><a class="text-white" href="indexEn.html">HOME</a></p>
         <p class="m-0 px-2">/</p>
-        <p class="m-0">CONTACT US</p>
+        <p class="m-0">CONTACT</p>
       </div>
     </div>
   </div>
   <!-- Header End -->
 
   <!-- Contact Start -->
-  <div class="container-fluid pt-5 " style="margin-top: -80px;">
+  <div class="container-fluid pt-5" style="margin-top: -80px;">
     <div class="container">
       <div class="text-center pb-2">
         <p class="section-title px-5">
           <span class="px-2">HNE İNŞAAT</span>
         </p>
-        <h1 class="mb-4">Contact</h1>
+        <h1 class="mb-4">CONTACT</h1>
       </div>
       <div class="row">
-        <div class="col-lg-7 mb-5">
-          <div class="map-container" style="position: relative; overflow: hidden; padding-top: 56.25%">
+        <!-- Harita Kısmı -->
+        <!-- Harita Kısmı -->
+        <div class="col-lg-7 col-md-12 mb-5">
+          <div class="map-container" style="position: relative; overflow: hidden; padding-top: 56.25%;">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.1578488550195!2d32.858696415147186!3d39.92718897944464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d340a22a2cb0b1%3A0x7a5aa5dc11f12ab8!2sKaz%C4%B1m%20%C3%96zalp%20Mahallesi%2C%20Rabat%20Sok.%20No%3A%2024%20%2F%203%2C%20Kavakl%C4%B1dere%2C%20%C3%87ankaya%2C%20Ankara%2C%20T%C3%BCrkiye!5e0!3m2!1str!2sus!4v1636003719463!5m2!1str!2sus"
-              width="100%" height="400" style="
-                  border: 0;
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  width: 3000px;
-                  height: 3000px;
-                " allowfullscreen="" loading="lazy">
+              style="border: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen=""
+              loading="lazy">
             </iframe>
           </div>
         </div>
+        <!-- İletişim Bilgileri  -->
+        <div class="col-lg-5 col-md-12 mb-5">
+          <div class="d-flex mb-3">
+            <i class="fa fa-map-marker d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+              style="width: 45px; height: 45px; font-size: 24px; min-width: 45px;"></i>
+            <div class="pl-2">
+              <h5>Address:</h5>
+              <p>Kazım Özalp Neighborhood <br> Rabat Street No: 24 / 2, Çankaya - Ankara</p>
 
-        <div class="col-lg-5 mb-5">
-          <div class="d-flex">
-            <i class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-              style="width: 45px; height: 45px"></i>
-            <div class="pl-3">
-              <h5>Adres</h5>
-              <p style="font-weight: bold">
-                Kazım Özalp Neighborhood, Rabat Street No: 24 / 2, Çankaya - Ankara
-              </p>
             </div>
           </div>
-          <div class="d-flex">
+
+          <div class="d-flex mb-3">
             <i class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
               style="width: 45px; height: 45px"></i>
-            <div class="pl-3">
-              <h5>E-Posta:</h5>
-              <p style="font-weight: bold">info@hneinsaat.com</p>
+            <div class="pl-2">
+              <h5>E-Mail:</h5>
+              <p>info@hneinsaat.com</p>
             </div>
-            <br>
           </div>
-          <div class="d-flex">
+          <div class="d-flex mb-3">
             <i class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
               style="width: 45px; height: 45px"></i>
             <div class="pl-3">
               <h5>Phone</h5>
-              <p style="font-weight: bold">(312) 437 00 19</p>
+              <p>(312) 437 00 19</p>
             </div>
           </div>
-          <div class="d-flex">
+          <div class="d-flex mb-3">
             <i class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
               style="width: 45px; height: 45px"></i>
             <div class="pl-3">
               <h5>Fax</h5>
-              <p style="font-weight: bold">(312) 437 00 20</p>
+              <p>(312) 437 00 20</p>
             </div>
           </div>
         </div>
@@ -150,6 +168,7 @@
     </div>
   </div>
   <!-- Contact End -->
+
 
   <!-- Footer Start -->
   <div id="footer"></div>

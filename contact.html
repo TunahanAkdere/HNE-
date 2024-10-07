@@ -32,6 +32,28 @@
 
   <!-- Customized Bootstrap Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
+
+
+
+  <style>
+    .map-container iframe {
+      width: 100%;
+      height: 400px;
+    }
+
+    @media (max-width: 768px) {
+      .map-container iframe {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .map-container iframe {
+        height: 250px;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -77,7 +99,7 @@
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
       <h3 class="display-3 font-weight-bold text-white">İLETİŞİM</h3>
       <div class="d-inline-flex text-white">
-        <p class="m-0"><a class="text-white" href="">ANASAYFA</a></p>
+        <p class="m-0"><a class="text-white" href="index.html">ANASAYFA</a></p>
         <p class="m-0 px-2">/</p>
         <p class="m-0">İLETİŞİM</p>
       </div>
@@ -86,7 +108,7 @@
   <!-- Header End -->
 
   <!-- Contact Start -->
-  <div class="container-fluid pt-5 " style="margin-top: -80px;">
+  <div class="container-fluid pt-5" style="margin-top: -80px;">
     <div class="container">
       <div class="text-center pb-2">
         <p class="section-title px-5">
@@ -95,56 +117,50 @@
         <h1 class="mb-4">İLETİŞİM</h1>
       </div>
       <div class="row">
-        <div class="col-lg-7 mb-5">
-          <div class="map-container" style="position: relative; overflow: hidden; padding-top: 56.25%">
+        <!-- Harita Kısmı -->
+        <!-- Harita Kısmı -->
+        <div class="col-lg-7 col-md-12 mb-5">
+          <div class="map-container" style="position: relative; overflow: hidden; padding-top: 56.25%;">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.1578488550195!2d32.858696415147186!3d39.92718897944464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d340a22a2cb0b1%3A0x7a5aa5dc11f12ab8!2sKaz%C4%B1m%20%C3%96zalp%20Mahallesi%2C%20Rabat%20Sok.%20No%3A%2024%20%2F%203%2C%20Kavakl%C4%B1dere%2C%20%C3%87ankaya%2C%20Ankara%2C%20T%C3%BCrkiye!5e0!3m2!1str!2sus!4v1636003719463!5m2!1str!2sus"
-              width="100%" height="400" style="
-                  border: 0;
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  width: 3000px;
-                  height: 3000px;
-                " allowfullscreen="" loading="lazy">
+              style="border: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen=""
+              loading="lazy">
             </iframe>
           </div>
         </div>
-
-        <div class="col-lg-5 mb-5">
-          <div class="d-flex">
-            <i class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-              style="width: 45px; height: 45px"></i>
-            <div class="pl-3">
-              <h5>Adres</h5>
-              <p style="font-weight: bold">
-                Kazım Özalp Mahalesi Rabat Sokak No: 24 / 2 Çankaya - Ankara
-              </p>
+        <!-- İletişim Bilgileri  -->
+        <div class="col-lg-5 col-md-12 mb-5">
+          <div class="d-flex mb-3">
+            <i class="fa fa-map-marker d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+              style="width: 45px; height: 45px; font-size: 24px; min-width: 45px;"></i>
+            <div class="pl-2">
+              <h5>Adres:</h5>
+              <p>Kazım Özalp Mahalesi <br>Rabat Sokak No: 24 / 2 Çankaya - Ankara</p>
             </div>
           </div>
-          <div class="d-flex">
+
+          <div class="d-flex mb-3">
             <i class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
               style="width: 45px; height: 45px"></i>
-            <div class="pl-3">
+            <div class="pl-2">
               <h5>E-Posta:</h5>
-              <p style="font-weight: bold">info@hneinsaat.com</p>
+              <p>info@hneinsaat.com</p>
             </div>
-            <br>
           </div>
-          <div class="d-flex">
+          <div class="d-flex mb-3">
             <i class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
               style="width: 45px; height: 45px"></i>
             <div class="pl-3">
               <h5>Tel</h5>
-              <p style="font-weight: bold">(312) 437 00 19</p>
+              <p>(312) 437 00 19</p>
             </div>
           </div>
-          <div class="d-flex">
+          <div class="d-flex mb-3">
             <i class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
               style="width: 45px; height: 45px"></i>
             <div class="pl-3">
               <h5>Fax</h5>
-              <p style="font-weight: bold">(312) 437 00 20</p>
+              <p>(312) 437 00 20</p>
             </div>
           </div>
         </div>
@@ -152,6 +168,7 @@
     </div>
   </div>
   <!-- Contact End -->
+
 
   <!-- Footer Start -->
   <div id="footer"></div>

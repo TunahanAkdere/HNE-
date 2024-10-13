@@ -61,6 +61,27 @@
       right: 0;
       text-align: center;
     }
+
+    .contact-info {
+      transition: transform 0.3s ease;
+      /* Animasyon ekleyin */
+    }
+
+    .contact-info:hover {
+      transform: scale(1.05);
+      /* Hover etkisi ile büyütme */
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+
+    .contact-info i {
+      color: #ffffff;
+      /* İkon rengi */
+      font-size: 24px;
+      /* İkon boyutu */
+    }
   </style>
 </head>
 
@@ -108,102 +129,143 @@
     data-interval="3000">
     <!-- Carousel Items -->
     <div class="carousel-inner">
-      <!-- Slide 1 -->
+
+      <!-- Slide 3 -->
       <div class="carousel-item active">
+        <!-- Style settings for the background and content area -->
         <div class="bg-primarybackground overlay" style="
-              background: linear-gradient(
-                  rgba(0, 0, 0, 0.4),
-                  rgba(0, 0, 0, 0.4)
-                ),
-                url(img/ates-insaat-15.jpg);
-              background-size: cover;
-              background-position: center;
-            ">
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.459),  /* Dark shadow effect */
+      rgba(0, 0, 0, 0.705)   /* Dark shadow effect */
+    ),
+    url(img/ates-insaat-13.jpg); /* Background image */
+    background-size: cover; /* Ensure background covers the entire area */
+    background-position: center; /* Center the background */
+    height: 100vh;"> <!-- Height adjustment to cover the full screen -->
+
           <div class="rowCarosel align-items-center px-3">
-            <div class="col-lg-6 text-center text-lg-left" style="margin-top: 200px">
-              <h1 style="margin-top: 100px;" class="display-3 font-weight-bold text-white">
-                New Approach
+            <div class="col-lg-6 text-center text-lg-left" style="margin-top: 100px">
+              <h1 style="margin-top: 120px; color: white;" class="display-3 font-weight-bold">
+                Hakkımızda
               </h1>
-              <p class="text-white mb-4">
-                Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est
-                amet sed sit. Ipsum dolor no justo dolor et, lorem ut dolor
-                erat dolore sed ipsum at ipsum nonumy amet.
-              </p>
-              <a href="about.html" class="btn btn-secondary mt-1 py-3 px-5"
-                style="position: relative; z-index: 10">Hakkımızda</a>
+              <div class="contact-info mt-4 text-white" style="cursor: pointer;"
+                onclick="window.location.href='about.html';">
+                <!-- Tıklandığında yönlendirme -->
+
+                <!-- İletişim bilgileri -->
+                <p class="mb-1" style="font-size: 20px; line-height: 1.5; text-align: justify;">
+                  HNE İnşaat, inşaat sektöründe kalite ve güvenin simgesi olarak öne çıkmaktadır. Müşteri
+                  memnuniyetini her zaman önceliklendiren firmamız, modern inşaat teknikleri ve yüksek mühendislik
+                  çözümleri ile projelerini başarıyla tamamlamaktadır. Uzman ekibimizle birlikte, sürdürülebilir ve
+                  çevre dostu projelere imza atmayı hedefliyoruz. </p>
+                <br><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 1 -->
+      <div class="carousel-item ">
+        <!-- Style settings for the background and content area -->
+        <div class="bg-primarybackground overlay" style="
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.459),  /* Dark shadow effect */
+      rgba(0, 0, 0, 0.705)   /* Dark shadow effect */
+    ),
+    url(img/ates-insaat-15.jpg); /* Background image */
+    background-size: cover; /* Ensure background covers the entire area */
+    background-position: center; /* Center the background */
+    height: 100vh;"> <!-- Height adjustment to cover the full screen -->
+
+          <div class="rowCarosel align-items-center px-3">
+            <div class="col-lg-6 text-center text-lg-left" style="margin-top: 100px">
+              <h1 style="margin-top: 120px; color: white;" class="display-3 font-weight-bold">
+                İletişim
+              </h1>
+              <div class="contact-info mt-4 text-white" style="cursor: pointer;"
+                onclick="window.location.href='contact.html';">
+                <!-- Tıklandığında yönlendirme -->
+
+                <!-- İletişim bilgileri -->
+                <p class="mb-1" style="font-size: 20px; line-height: 1.5; text-align: justify;">
+                  <i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> <!-- Harita simgesi -->
+                  Kazım Özalp Mahalesi Rabat Sokak No: 24 / 2, Çankaya - Ankara
+                </p>
+                <p class="mb-1" style="font-size: 20px; line-height: 1.5;text-align: justify;">
+                  <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> <!-- Telefon simgesi -->
+                  Tel (PBX): <a href="tel:+3124370019" class="text-white" style="text-decoration: underline;">(312) 437
+                    00 19</a>
+                </p>
+                <p class="mb-1" style="font-size: 20px; line-height: 1.5;text-align: justify;">
+                  <i class="fas fa-fax" style="margin-right: 8px;"></i> <!-- Faks simgesi -->
+                  Fax: <a href="fax:+3124370020" class="text-white" style="text-decoration: underline;">(312) 437 00
+                    20</a>
+                </p>
+                <p class="mb-1" style="font-size: 20px; line-height: 1.5;text-align: justify;">
+                  <i class="fas fa-envelope" style="margin-right: 8px;"></i> <!-- E-posta simgesi -->
+                  Email: <a href="mailto:info@hneinsaat.com" class="text-white"
+                    style="text-decoration: underline;">info@hneinsaat.com</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Slide 2 -->
-      <div class="carousel-item">
+      <div class="carousel-item ">
+        <!-- Arka plan ve içerik alanı için stil ayarları -->
         <div class="bg-primarybackground overlay" style="
-              background: linear-gradient(
-                  rgba(0, 0, 0, 0.4),
-                  rgba(0, 0, 0, 0.4)
-                ),
-                url(img/atesABOUT.png);
-              background-size: cover;
-              background-position: center;
-            ">
+      background: linear-gradient(
+      rgba(0, 0, 0, 0.459),  /* Dark shadow effect */
+      rgba(0, 0, 0, 0.705)   /* Dark shadow effect */
+    ),
+        url(img/ates-insaat-makina-16.jpg); /* Arka plan resmi */
+      background-size: cover; /* Arka planın tamamen kaplaması */
+      background-position: center; /* Arka planın ortalanması */
+      height: 100vh;"> <!-- Yükseklik ayarı, ekranın tamamını kaplar -->
+
+
           <div class="rowCarosel align-items-center px-3">
-            <div class="col-lg-6 text-center text-lg-left" style="margin-top: 200px">
-              <h1 style="margin-top: 100px;" class="display-3 font-weight-bold text-white">
-                New Approach
+            <div class="col-lg-6 text-center text-lg-left" style="margin-top: 100px">
+              <h1 style="margin-top: 120px; color: white;" class="display-3 font-weight-bold">
+                Makine Parkımız
               </h1>
-              <p class="text-white mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                diam.
-              </p>
-              <a href="about.html" class="btn btn-secondary mt-1 py-3 px-5"
-                style="position: relative; z-index: 10">Hakkımızda</a>
+              <div class="contact-info mt-4 text-white" style="
+           cursor: pointer;" onclick="window.location.href='makineparki.html';">
+                <!-- Tıklandığında yönlendirme -->
+
+                <!-- Makine parkı bilgileri -->
+                <p class="mb-1" style="font-size: 20px; line-height: 1.5;text-align: justify;">
+                  Makine parkımız, en son teknolojiye sahip ekipmanlarla donatılmıştır ve projelerimizin her aşamasında
+                  mükemmel performans sağlamak için titizlikle seçilmiştir. Yüksek kapasiteli iş makineleri, zemin
+                  işleme,
+                  beton dökme ve ağır yük taşıma gibi çeşitli uygulamalarda kullanılmakta, projelerimizin zamanında ve
+                  kaliteli bir şekilde tamamlanmasına olanak tanımaktadır.
+                </p>
+                <br>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="bg-primarybackground overlay" style="
-              background: linear-gradient(
-                  rgba(0, 0, 0, 0.4),
-                  rgba(0, 0, 0, 0.4)
-                ),
-                url(img/ates-insaat-makina-16.jpg);
-              background-size: cover;
-              background-position: center;
-            ">
-          <div class="rowCarosel align-items-center px-3">
-            <div class="col-lg-6 text-center text-lg-left" style="margin-top: 200px">
-              <h1 style="margin-top: 100px;" class="display-3 font-weight-bold text-white">
-                New Approach
-              </h1>
-              <p class="text-white mb-4">
-                Vestibulum ante ipsum primis in faucibus orci luctus et
-                ultrices posuere cubilia Curae; Integer non velit.
-              </p>
-              <a href="about.html" class="btn btn-secondary mt-1 py-3 px-5"
-                style="position: relative; z-index: 10">Hakkımızda</a>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </div>
 
     <!-- Carousel Controls -->
     <a class="carousel-control-prev" href="#backgroundCarousel" role="button" data-slide="prev" style="z-index: 20">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- Önceki slayta geçiş simgesi -->
+      <span class="sr-only">Previous</span> <!-- Ekranda okunan metin -->
     </a>
     <a class="carousel-control-next" href="#backgroundCarousel" role="button" data-slide="next" style="z-index: 20">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+      <span class="carousel-control-next-icon" aria-hidden="true"></span> <!-- Sonraki slayta geçiş simgesi -->
+      <span class="sr-only">Next</span> <!-- Ekranda okunan metin -->
     </a>
   </div>
-
   <!-- Header End -->
+
   <!-- References Start -->
   <div class="container-fluid py-5" style="
     padding-top: 0px !important;">
@@ -215,73 +277,73 @@
       </div>
       <div class="owl-carousel testimonial-carousel">
         <div class="testimonial-item px-3">
-          <div class="d-flex align-items-center" style="flex-direction: column">
+          <div class="d-flex align-items-center" style="flex-direction: column; width: 240px !important;">
             <img src="img/Referanslar/logo-abb.png" alt="Image" />
           </div>
         </div>
 
         <div class="testimonial-item px-3">
-          <div class="d-flex align-items-center" style="flex-direction: column">
+          <div class="d-flex align-items-center" style="flex-direction: column; width: 240px !important;">
             <img src="img/Referanslar/logo-ankara-valiligi.png" alt="Image" />
           </div>
         </div>
         <div class="testimonial-item px-3">
-          <div class="d-flex align-items-center" style="flex-direction: column">
+          <div class="d-flex align-items-center" style="flex-direction: column; width: 240px !important;">
             <img src="img/Referanslar/logo-aski.png" alt="Image" />
           </div>
         </div>
         <div class="testimonial-item px-3">
-          <div class="d-flex align-items-center" style="flex-direction: column">
+          <div class="d-flex align-items-center" style="flex-direction: column; width: 240px !important;">
             <img src="img/Referanslar/logo-aso.png" alt="Image" />
           </div>
         </div>
         <div class="testimonial-item px-3">
-          <div class="d-flex align-items-center" style="flex-direction: column">
+          <div class="d-flex align-items-center" style="flex-direction: column; width: 240px !important;">
             <img src="img/Referanslar/logo-bursabb.png" alt="Image" />
           </div>
         </div>
         <div class="testimonial-item px-3">
-          <div class="d-flex align-items-center" style="flex-direction: column">
+          <div class="d-flex align-items-center" style="flex-direction: column; width: 240px !important;">
             <img src="img/Referanslar/logo-buski.png" alt="Image" />
           </div>
         </div>
         <div class="testimonial-item px-3">
-          <div class="d-flex align-items-center" style="flex-direction: column">
+          <div class="d-flex align-items-center" style="flex-direction: column; width: 240px !important;">
             <img src="img/Referanslar/logo-cumhurbaskanligi.png" alt="Image" />
           </div>
         </div>
         <div class="testimonial-item px-3">
-          <div class="d-flex align-items-center" style="flex-direction: column">
+          <div class="d-flex align-items-center" style="flex-direction: column; width: 240px !important;">
             <img src="img/Referanslar/logo-dsi.png" alt="Image" />
           </div>
         </div>
         <div class="testimonial-item px-3">
-          <div class="d-flex align-items-center" style="flex-direction: column">
+          <div class="d-flex align-items-center" style="flex-direction: column; width: 240px !important;">
             <img src="img/Referanslar/logo-hab.png" alt="Image" />
           </div>
         </div>
         <div class="testimonial-item px-3">
-          <div class="d-flex align-items-center" style="flex-direction: column">
+          <div class="d-flex align-items-center" style="flex-direction: column; width: 240px !important;">
             <img src="img/Referanslar/logo-ilbank.png" alt="Image" />
           </div>
         </div>
         <div class="testimonial-item px-3">
-          <div class="d-flex align-items-center" style="flex-direction: column">
+          <div class="d-flex align-items-center" style="flex-direction: column; width: 240px !important;">
             <img src="img/Referanslar/logo-kgm.png" alt="Image" />
           </div>
         </div>
         <div class="testimonial-item px-3">
-          <div class="d-flex align-items-center" style="flex-direction: column">
+          <div class="d-flex align-items-center" style="flex-direction: column; width: 240px !important;">
             <img src="img/Referanslar/logo-meb.png" alt="Image" />
           </div>
         </div>
         <div class="testimonial-item px-3">
-          <div class="d-flex align-items-center" style="flex-direction: column">
+          <div class="d-flex align-items-center" style="flex-direction: column; width: 240px !important;">
             <img src="img/Referanslar/logo-sasad.png" alt="Image" />
           </div>
         </div>
         <div class="testimonial-item px-3">
-          <div class="d-flex align-items-center" style="flex-direction: column">
+          <div class="d-flex align-items-center" style="flex-direction: column; width: 240px !important;">
             <img src="img/Referanslar/logo-ssb.png" alt="Image" />
           </div>
         </div>

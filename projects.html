@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>HNE İnşaat</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/projects.css" rel="stylesheet" />
+
+    <style>
+        .project-area {
+            margin: 100px;
+        }
+
+        .project-area .section-title h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .project-area .single-project {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-area .single-project:hover {
+            transform: scale(1.05);
+        }
+
+        .project-area .thumb img {
+            border-radius: 8px;
+        }
+
+        .project-area .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .single-project:hover .middle {
+            opacity: 1;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            display: none;
+        }
+
+        .back-to-top.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+        <nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-0 px-0 px-lg-5">
+            <a href="index.html" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px">
+                <img src="img/LOGO.png" alt="HNE İnşaat Logo" style="height: 95px" />
+            </a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav font-weight-bold mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link ">Anasayfa</a>
+                    <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
+                    <a href="projects.html" class="nav-item nav-link active">Projelerimiz</a>
+                    <a href="makineparki.html" class="nav-item nav-link">Makine Parkı</a>
+                    <a href="gallery.html" class="nav-item nav-link">Galeri</a>
+                    <a href="reference.html" class="nav-item nav-link">Referanslar</a>
+                    <a href="blog.html" class="nav-item nav-link">Basında Biz</a>
+                    <a href="contact.html" class="nav-item nav-link">İletişim</a>
+                </div>
+                <a href="indexEn.html" class="px-4"
+                    style="display: flex; align-items: center; padding: 8px; margin-right: 10px;">
+                    <img src="img/tr.png" alt="Tr icon" style="width: 80px; margin-right: 10px;">
+                </a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Start Project Area -->
+    <section class="project-area" id="project">
+        <div class="text-center pb-2">
+            <p class="section-title px-5">
+                <span class="px-2" style="background-color: #ffffff;">HNE İnşaat</span>
+            </p>
+            <h1 class="mb-4">PROJELERİMİZ</h1>
+        </div>
+        <div class="wrap">
+            <div class="tile">
+                <img src='projects/adiyaman-indere.png' />
+                <div class="text">
+                    <h1 style="color: rgb(0, 0, 0);">ADIYAMAN</h1>
+                    <h4 class="animate-text" style="color: rgb(0, 0, 0);">Kanalizasyon Ve İçmesuyu İnşaatı Yapım İşi
+                    </h4>
+                    <!-- Additional Information Section -->
+                    <div class="animate-text">
+
+                        <p class="animate-text"><strong>İhale başlığı</strong> <br>Kanalizasyon Ve İçmesuyu İnşaatı
+                            Yapım İşi</p>
+                        <p class="animate-text"><strong>İhale türü</strong><br> Yapım İşi</p>
+                        <p class="animate-text"><strong>İhale kaynağı</strong><br> Ekap</p>
+
+                    </div>
+
+                    <div class="dots" style="color: black;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="tile">
+                <img src='projects/balıkesir.jpg' />
+                <div class="text">
+                    <h1 style="color: rgb(0, 0, 0);">BALIKESİR</h1>
+                    <h4 class="animate-text" style="color: rgb(0, 0, 0);">Taşkın Önleme Amaçlı Dolgu Yapım İşi
+                    </h4>
+                    <!-- Additional Information Section -->
+                    <div class="animate-text">
+
+                        <p class="animate-text"><strong>İhale başlığı</strong> <br>Taşkın Önleme Amaçlı Dolgu Yapım İşi
+                        </p>
+                        <p class="animate-text"><strong>İhale türü</strong><br> Yapım İşi</p>
+                        <p class="animate-text"><strong>İhale kaynağı</strong><br> Ekap</p>
+
+                    </div>
+
+                    <div class="dots" style="color: black;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile">
+                <img src='img/hne (18).jpeg' />
+                <div class="text">
+                    <h1 style="color: rgb(0, 0, 0);">ADIYAMAN</h1>
+                    <h4 class="animate-text" style="color: rgb(0, 0, 0);">Atıksu Ve Yağmursuyu Kanalı Yapım İşi</h4>
+                    <!-- Additional Information Section -->
+                    <div class="animate-text">
+
+                        <p class="animate-text"><strong>İhale başlığı</strong> <br>Atıksu Ve Yağmursuyu Kanalı Yapım İşi
+                        </p>
+                        <p class="animate-text"><strong>İhale türü</strong><br> Yapım İşi</p>
+                        <p class="animate-text"><strong>İhale kaynağı</strong><br> Ekap</p>
+
+                    </div>
+
+                    <div class="dots" style="color: black;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+    <!-- End Project Area -->
+
+    <!-- Footer Start -->
+    <div id="footer"></div>
+
+    <script>
+        fetch("footer.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch((error) => console.error("Footer yüklenirken hata:", error));
+    </script>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Scroll Function for Navbar -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('.navbar').addClass('scrolled');
+                } else {
+                    $('.navbar').removeClass('scrolled');
+                }
+
+                // Back to top button
+                if ($(this).scrollTop() > 300) {
+                    $('.back-to-top').addClass('show');
+                } else {
+                    $('.back-to-top').removeClass('show');
+                }
+            });
+
+            $('.back-to-top').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 500);
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>

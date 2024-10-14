@@ -53,27 +53,65 @@
       height: 100%;
     }
 
+    /* Mobil cihazlar için (768px altı) */
     @media (max-width: 768px) {
       .about-title {
         font-size: 2rem;
-        /* Mobil cihazlarda daha küçük başlık */
+        /* Başlık boyutunu küçült */
       }
 
       .about-text {
-        font-size: 1rem;
-        /* Mobil cihazlarda daha küçük metin */
+        font-size: 0.8rem;
+        /* Metin boyutunu küçült */
+        line-height: 1.5;
+        /* Satırlar arasında daha rahat bir boşluk */
+      }
+
+      .about-text,
+      .section-title {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+        /* Bölüm başlıklarını küçült */
+      }
+
+      .pr-5 {
+        padding-right: 15px;
+        /* Sağdan boşluğu azalt */
+      }
+
+      img {
+        max-width: 100%;
+        /* Görsellerin genişliğini tam ekran yap */
+        height: auto;
       }
     }
 
-    @media (min-width: 769px) {
+    /* Tablet ve daha büyük ekranlar için (768px ve üzeri) */
+    @media (min-width: 768px) {
       .about-title {
-        font-size: 3rem;
-        /* Daha büyük ekranlar için başlık */
+        font-size: 2.5rem;
+        /* Daha büyük başlık boyutu */
       }
 
       .about-text {
         font-size: 1.2rem;
-        /* Daha büyük ekranlar için metin */
+        /* Metin boyutu daha büyük */
+        line-height: 1.6;
+        /* Satırlar arasında daha fazla boşluk */
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        /* Bölüm başlığı boyutunu büyüt */
+      }
+
+      img {
+        max-width: 100%;
+        /* Görsellerin genişliğini sınırlı tut */
       }
     }
   </style>
@@ -119,6 +157,32 @@
   <div class="container-fluid py-5" style="margin-top: -100px;">
     <div class="container">
       <div class="row align-items-center">
+        <div class="col-lg-6">
+
+          <h1 class="about-title mb-4">HAKKIMIZDA</h1>
+          <p class="about-text" style="color: black;">
+            HNE İnşaat, 14 Ekim 2016 tarihinde inşaat sektöründe faaliyetlerine başlamış ve kısa sürede kalite ile
+            güvenin simgesi haline gelmiştir. Müşteri memnuniyetini daima önceliklendiren firmamız, modern inşaat
+            teknikleri ve yüksek mühendislik çözümleriyle projelerini başarıyla hayata geçirmektedir.
+            <br><br>
+          </p>
+          <p class="about-text" style="color: black;">
+            Uzman ekibimiz, sürdürülebilir ve çevre dostu projelere imza atmayı hedefleyerek, her aşamada yüksek
+            standartları gözetmektedir. Kanalizasyon sistemleri, atıkların güvenli bir şekilde uzaklaştırılması ve
+            arıtılması için kritik bir öneme sahiptir. Bu bağlamda, kanalizasyon sistemlerinin etkin işletimi, atık su
+            arıtma tesislerinin yönetimi, fosseptik çukurların ve havuzların düzenli olarak boşaltılması ve temizlenmesi
+            gibi hizmetler sunmaktayız.
+            <br><br>
+          </p>
+          <p class="about-text" style="color: black;">
+            HNE İnşaat olarak, her projede müşteri memnuniyetini en üst düzeyde tutmayı hedefliyoruz ve
+            bu yolda kararlılıkla ilerliyoruz.
+          </p>
+          <br><br>
+          </p>
+          <img src="img/LOGO.png" alt="logo" style="max-width: 80%; height: auto;">
+
+        </div>
         <div class="col-lg-5">
           <img src="img/ates-insaat-05.jpg" alt="atesAbout" style="width: 100%; margin-bottom: 10px;">
           <img src="img/ates-insaat-04.jpg" alt="atesAbout" style="width: 100%; margin-bottom: 10px;">
@@ -126,30 +190,6 @@
 
 
         </div>
-        <div class="col-lg-7">
-          <p class="section-title pr-5">
-            <span class="pr-2">HNE İNŞAAT</span>
-          </p>
-          <h1 class="about-title mb-4">HAKKIMIZDA</h1>
-          <p class="about-text" style="color: black;">
-            HNE İnşaat, 14 Ekim 2016 tarihinde inşaat sektöründe faaliyetlerine başlamış ve kısa sürede kalite ile
-            güvenin simgesi haline gelmiştir. Müşteri memnuniyetini daima önceliklendiren firmamız, modern inşaat
-            teknikleri ve yüksek mühendislik çözümleriyle projelerini başarıyla hayata geçirmektedir.
-
-            Uzman ekibimiz, sürdürülebilir ve çevre dostu projelere imza atmayı hedefleyerek, her aşamada yüksek
-            standartları gözetmektedir. Kanalizasyon sistemleri, atıkların güvenli bir şekilde uzaklaştırılması ve
-            arıtılması için kritik bir öneme sahiptir. Bu bağlamda, kanalizasyon sistemlerinin etkin işletimi, atık su
-            arıtma tesislerinin yönetimi, fosseptik çukurların ve havuzların düzenli olarak boşaltılması ve temizlenmesi
-            gibi hizmetler sunmaktayız.
-
-            HNE İnşaat olarak, her projede müşteri memnuniyetini en üst düzeyde tutmayı hedefliyoruz ve
-            bu yolda kararlılıkla ilerliyoruz.
-            <br><br>
-          </p>
-          <img src="img/LOGO.png" alt="logo" style="max-width: 80%; height: auto;">
-
-        </div>
-
       </div>
     </div>
   </div>

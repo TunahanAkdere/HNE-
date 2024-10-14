@@ -1,0 +1,45 @@
+.navbar-brand {
+  font-size: 30px; /* Reduce logo size */
+}
+
+.nav-item {
+  font-size: 14px; /* Smaller font for navigation */
+}
+
+/* Blog Section Styles */
+.card-img-top {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card-body {
+  padding: 1rem; /* Adjust padding for smaller screens */
+}
+
+.section-title {
+  font-size: 24px; /* Smaller section title */
+}
+
+h1 {
+  font-size: 28px; /* Smaller main heading */
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items */
+  }
+
+  .navbar-nav {
+    text-align: center; /* Center navbar links */
+  }
+
+  .card {
+    margin-bottom: 20px; /* Space between cards */
+  }
+
+  .btn {
+    width: 100%; /* Full-width buttons */
+    margin: 0; /* Remove margins */
+  }
+}

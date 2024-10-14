@@ -19,6 +19,10 @@ a:focus {
   position: relative;
   padding-top: 1px;
   background: #121518;
+  color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Merkezde hizalamak için */
 }
 
 .footer .footer-about,
@@ -26,13 +30,12 @@ a:focus {
 .footer .footer-contact {
   position: relative;
   margin-bottom: 55px;
-  color: #dddddd;
+  text-align: center; /* Tüm metinleri merkezde hizala */
 }
 
 .footer .footer-about h3,
 .footer .footer-link h3,
 .footer .footer-contact h3 {
-  position: relative;
   margin-bottom: 10px;
   font-size: 22px;
   font-weight: 600;
@@ -41,15 +44,15 @@ a:focus {
 }
 
 .footer .footer-link a {
-  display: block;
+  display: flex;
   margin-bottom: 10px;
   color: #dddddd;
   transition: 0.3s;
   text-transform: capitalize;
+  align-items: center;
 }
 
 .footer .footer-link a::before {
-  position: relative;
   content: "\f105";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -66,8 +69,9 @@ a:focus {
 }
 
 .footer .footer-social {
-  position: relative;
   margin-top: 35px;
+  display: flex;
+  justify-content: center; /* Sosyal medya ikonlarını merkezde hizala */
 }
 
 .footer .footer-social a {
@@ -89,12 +93,14 @@ a:focus {
 }
 
 .footer .footer-menu .f-menu {
-  position: relative;
   padding: 10px 0;
   font-size: 0;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center; /* Menü öğelerini merkezde hizala */
+  flex-wrap: wrap;
 }
 
 .footer .footer-menu .f-menu a {
@@ -117,15 +123,12 @@ a:focus {
 
 .footer .copyright {
   padding: 30px 15px;
+  text-align: center;
 }
 
 .footer .copyright p {
   margin: 0;
   color: #dddddd;
-}
-
-.footer .copyright .col-md-6:last-child p {
-  text-align: right;
 }
 
 .footer .copyright p a {
@@ -138,10 +141,84 @@ a:focus {
   color: #ffffff;
 }
 
+/* Footer için responsivite ayarları */
 @media (max-width: 768px) {
-  .footer .copyright p,
-  .footer .copyright .col-md-6:last-child p {
-    margin: 5px 0;
+  .footer .footer-about,
+  .footer .footer-link,
+  .footer .footer-contact {
+    text-align: center; /* Mobilde metni merkezde hizala */
+  }
+
+  .footer .footer-link a,
+  .footer .footer-contact p {
+    text-align: center; /* Metinleri merkezde hizala */
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .footer .footer-social {
+    justify-content: center; /* Mobilde sosyal medya ikonlarını merkezde hizala */
+    margin-top: 10px;
+  }
+
+  .footer-menu {
     text-align: center;
+    padding-top: 10px;
+  }
+
+  .footer-menu .f-menu {
+    flex-direction: row;
+    padding-top: 10px;
+  }
+
+  .footer-menu .f-menu a {
+    padding: 5px 0;
+    display: block;
+  }
+
+  .copyright {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+/* Logo görüntüsü için responsive stil */
+img {
+  max-width: 100%; /* Görüntü kapsayıcısının genişliğini aşmayacak */
+  height: auto; /* Oranlarını koruyacak şekilde yüksekliği ayarlar */
+  display: block; /* Ekstra boşluk bırakmamak için */
+  margin: 0 auto; /* Görüntüyü merkezlemek için kullanılır */
+}
+
+/* Daha küçük ekranlar için */
+@media (max-width: 768px) {
+  img {
+    max-width: 100%; /* Küçük ekranlarda logonun boyutu biraz daha küçülsün */
+  }
+}
+
+.about-textFooter {
+  font-size: 1rem; /* Varsayılan font boyutu */
+  line-height: 1.6; /* Satırlar arası boşluk */
+  color: black; /* Metin rengi */
+  margin: 0 auto; /* Metni yatayda ortala */
+  max-width: 800px; /* Maksimum genişlik ayarı */
+  padding: 0 15px; /* Kenarlardan boşluk bırak */
+  text-align: center; /* Metni merkeze hizala */
+}
+
+/* Mobil cihazlar için */
+@media (max-width: 768px) {
+  .about-textFooter {
+    font-size: 0.9rem; /* Daha küçük ekranlar için font boyutunu küçült */
+    line-height: 1.4; /* Satır yüksekliğini biraz düşür */
+    padding: 0 10px; /* Kenarlardaki boşluğu azalt */
+  }
+}
+
+/* Tablet ve daha büyük ekranlar için */
+@media (min-width: 768px) {
+  .about-textFooter {
+    font-size: 1.2rem; /* Daha büyük ekranlar için font boyutunu artır */
   }
 }

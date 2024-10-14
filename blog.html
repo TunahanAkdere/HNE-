@@ -8,7 +8,10 @@
 
   <!-- Favicon -->
   <link href="img/favicon.ico" rel="icon" />
+
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
   <!-- Google Web Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet" />
@@ -19,11 +22,6 @@
   <!-- Flaticon Font -->
   <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
 
-  <!-- Libraries Stylesheet -->
-  <!-- Libraries -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-
   <!-- Stylesheet -->
   <link href="css/footer.css" rel="stylesheet" />
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
@@ -31,30 +29,24 @@
 
   <!-- Customized Bootstrap Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
-  <style>
-    /* Sadece PC ekranları için 1030px genişlik */
-    @media (min-width: 1024px) {
-      .card-img-top {
-        width: 1030px;
-      }
-    }
-  </style>
+
+  <!-- Responsive Stylesheet -->
+  <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>
   <!-- Navbar Start -->
   <div class="container-fluid bg-light position-relative shadow">
-    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+    <nav class="navbar navbar-expand-lg navbar-light py-3 px-0 px-lg-5">
       <a href="index.html" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px">
         <img src="img/LOGO.png" alt="HNE İnşaat Logo" style="height: 95px" />
       </a>
-
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-        <div class="navbar-nav font-weight-bold mx-auto py-0">
-          <a href="index.html" class="nav-item nav-link ">Anasayfa</a>
+        <div class="navbar-nav font-weight-bold mx-auto">
+          <a href="index.html" class="nav-item nav-link">Anasayfa</a>
           <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
           <a href="projects.html" class="nav-item nav-link">Projelerimiz</a>
           <a href="makineparki.html" class="nav-item nav-link">Makine Parkı</a>
@@ -63,19 +55,16 @@
           <a href="blog.html" class="nav-item nav-link active">Basında Biz</a>
           <a href="contact.html" class="nav-item nav-link">İletişim</a>
         </div>
-        <a href="indexEn.html" class=" px-4"
-          style="display: flex; align-items: center; padding: 8px; margin-right: 10px;">
+        <a href="indexEn.html" class="px-4" style="display: flex; align-items: center;">
           <img src="img/tr.png" alt="Tr icon" style="width: 80px; margin-right: 10px;">
         </a>
-
       </div>
     </nav>
   </div>
   <!-- Navbar End -->
 
-
   <!-- Blog Start -->
-  <div class="container-fluid  pt-5">
+  <div class="container-fluid pt-5">
     <div class="container">
       <div class="text-center pb-2">
         <p class="section-title px-5">
@@ -84,26 +73,24 @@
         <h1 class="mb-4">HABERLER</h1>
       </div>
       <div class="row pb-3">
-        <div class="mb-4">
+        <div class="col-md-6 mb-4">
           <div class="card border-0 shadow-sm mb-2">
-            <img class="card-img-top mb-2" src="img/deprem2.png" alt="" />
+            <img class="card-img-top" src="img/deprem2.png" alt="" />
             <div class="card-body bg-light text-center p-4">
               <h4 class="">HNE İnşaat, Adıyaman İndere 2. Etap Deprem Konutları Projesi İçin Sözleşme İmzaladı</h4>
               <div class="d-flex justify-content-center mb-3" style="font-size: 1.2rem;">
                 <small class="mr-3"><i class="fa fa-user text-primary"></i> HNE İNŞAAT</small>
                 <small class="mr-3"><i class="fa fa-clock text-primary"></i> 20 Ekim 2023</small>
               </div>
-
               <a href="single.html" class="btn btn-primary px-4 mx-auto my-2">Daha Fazlası</a>
             </div>
           </div>
         </div>
-        <div class="mb-4">
+        <div class="col-md-6 mb-4">
           <div class="card border-0 shadow-sm mb-2">
-            <img class="card-img-top mb-2" src="img/iller.png" alt="" />
+            <img class="card-img-top" src="img/iller.png" alt="" />
             <div class="card-body bg-light text-center p-4">
-              <h4 class="">
-                İller Bankası, HNE İnşaat'ın Gölbaşı Kanalizasyon ve İçmesuyu Projesini Onayladı</h4>
+              <h4 class="">İller Bankası, HNE İnşaat'ın Gölbaşı Kanalizasyon ve İçmesuyu Projesini Onayladı</h4>
               <div class="d-flex justify-content-center mb-3" style="font-size: 1.2rem;">
                 <small class="mr-3"><i class="fa fa-user text-primary"></i> HNE İNŞAAT</small>
                 <small class="mr-3"><i class="fa fa-clock text-primary"></i> 5 Haziran 2023</small>
@@ -112,11 +99,7 @@
             </div>
           </div>
         </div>
-
-
-
       </div>
-
     </div>
   </div>
   <!-- Blog End -->
